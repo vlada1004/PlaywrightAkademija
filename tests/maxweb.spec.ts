@@ -11,7 +11,7 @@ test("test", async ({ page }) => {
   await page.locator('input[name="your-email"]').click();
   await page.locator('input[name="your-email"]').fill("testmail@test.com");
   await page.locator('textarea[name="your-message"]').click();
-  await page.locator('textarea[name="your-message"]').fill("Test mejl");
+  await page.locator('textarea[name="your-message"]').fill("Test mejl form");
   await page.getByRole("button", { name: "Send" }).click();
   await page
     .getByLabel("Contact form")
