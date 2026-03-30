@@ -15,6 +15,6 @@ test("test", async ({ page }) => {
   await page.getByRole("button", { name: "Send" }).click();
   await page
     .getByLabel("Contact form")
-    .getByText("There was an error trying to")
+    .getByText("Thank you for your message. It has been sent.")
     .click();
 });
